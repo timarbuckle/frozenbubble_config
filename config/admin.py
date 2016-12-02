@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.contrib.admin import AdminSite
 from models import Config
 
 class ConfigAdmin(admin.ModelAdmin):
@@ -9,3 +10,11 @@ class ConfigAdmin(admin.ModelAdmin):
     )
 
 admin.site.register(Config, ConfigAdmin)
+
+
+class ConfigAdminSite(AdminSite):
+    site_header = 'FrozenBubble Configuration'
+
+
+admin_site = ConfigAdminSite(name='configadmin')
+admin_site.register(Config)
