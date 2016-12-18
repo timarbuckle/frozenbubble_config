@@ -25,7 +25,7 @@ SECRET_KEY = '(ips%i7lan9=#lrtog*ryxr&rt(3k_w$lr8t9a-dmv0#xom#^6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', u'.timarbuckle.com', u'timarbuckle.com',]
 
 
 # Application definition
