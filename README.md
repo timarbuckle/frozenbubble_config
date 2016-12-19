@@ -7,6 +7,10 @@
     cd <somedir>
     git clone git@github.corp.openx.com:mobile/frozenbubble_config.git
     
+## install packages
+
+    sudo yum install -y sqlite-devel
+    
 ## setup virtual environment
 
     sudo pip install virtualenv
@@ -17,7 +21,9 @@
 ## note: you will need to run activate before starting the django app
     
     pip install django
-    ./manage migrate
+    python manage.py migrate
+    
+## note2: python might need to be reinstalled/recompiled after downloading sqlite-devel in order to import sqlite3
    
 ## create superuser name and password - this will be used to log in to the config interface
 
