@@ -21,7 +21,7 @@
 ## note: you will need to run activate before starting the django app
     
     pip install django
-    python manage.py migrate
+    ./manage migrate
     
 ## note2: python might need to be reinstalled/recompiled after downloading sqlite-devel in order to import sqlite3
    
