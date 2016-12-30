@@ -20,5 +20,6 @@ from config.admin import admin_site
 urlpatterns = [
     #url(r'^frozenbubble/admin/', admin.site.urls),
     url(r'^frozenbubble/admin/', admin_site.urls),
-    url(r'^frozenbubble/config/', include('config.urls'))
+    url(r'^frozenbubble/config/', include('config.urls')),
+    url(r'^frozenbubble/plugins/', include('plugins.urls'))
 ]
